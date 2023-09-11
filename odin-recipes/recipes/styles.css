@@ -1,0 +1,19 @@
+h1 {
+    color:rgb(100, 67, 9);
+    text-align: center;
+}
+
+h3 {
+    color: rgb(139, 99, 7);
+}
+
+* {
+    font-family:'Fantasy','Papyrus';
+}
+
+ul {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
