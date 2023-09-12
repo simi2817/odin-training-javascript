@@ -1,14 +1,19 @@
 h1 {
-    color:rgb(100, 67, 9);
+    color:rgb(193, 144, 59);
     text-align: center;
 }
 
 h3 {
-    color: rgb(139, 99, 7);
+    color: rgb(245, 226, 182);
 }
 
 * {
     font-family:'Fantasy','Papyrus';
+    color: whitesmoke;
+}
+
+p {
+    margin: auto;
 }
 
 ul {
@@ -16,4 +21,37 @@ ul {
     width: 100px;
     height: 100px;
     padding: 5px;
+}
+
+.flex-items {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.ingredients {
+    margin: 40px;
+    margin-left: auto;
+    padding: 5px;
+}
+
+.steps {
+    margin: 40px;
+    margin-left: 100px;
+    padding: 5px;
+}
+
+.biryani {
+    background-image: url('./biryani-bg.jpeg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.stuffed-peppers {
+    background-image: url('./stuffed-peppers-bg.jpeg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }

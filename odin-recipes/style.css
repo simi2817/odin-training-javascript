@@ -3,7 +3,7 @@ h1 {
     text-align: center;
     position: relative;
     top: 200px;
-    left: 50px;
+    left: 20px;
 }
 
 * {
@@ -12,18 +12,16 @@ h1 {
 
 body {
     background-image: url(background-pic.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
 ul {
     position: relative;
-    top: 350px;
-    left: 870px;
+    top: 260px;
+    left: 710px;
     list-style-type: none;
-    display: block;
-    width: 300px;
-    height: 300px;
-    padding: 5px;
 }
 
 a {
@@ -34,3 +32,13 @@ a:hover {
     font-size: larger;
 }
 
+.style-link {
+    display: block;
+    width: fit-content;
+}
+
+.style-title {
+    margin-block: 15px;
+    padding: 30px;
+    background-color: rgb(39, 71, 3, 0.5);
+}
