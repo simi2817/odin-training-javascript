@@ -18,7 +18,7 @@ p {
 
 ul {
     display: block;
-    width: 100px;
+    width: 250px;
     height: 100px;
     padding: 5px;
 }
@@ -29,29 +29,28 @@ ul {
 }
 
 .ingredients {
-    margin: 40px;
+    margin: 0;
     margin-left: auto;
     padding: 5px;
 }
 
 .steps {
-    margin: 40px;
-    margin-left: 100px;
+    /* margin: 40px;
+    margin-left: 100px; */
+    margin: 0 auto;
     padding: 5px;
 }
 
-.biryani {
-    background-image: url('./biryani-bg.jpeg');
+body {
+    background-image: url('./wooden-bg.jpeg');
     background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    margin: auto;
+    padding: 5px;
 }
 
-.stuffed-peppers {
-    background-image: url('./stuffed-peppers-bg.jpeg');
-    background-attachment: scroll;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+li {
+    background-color: rgb(30, 33, 36, 0.6);
 }
