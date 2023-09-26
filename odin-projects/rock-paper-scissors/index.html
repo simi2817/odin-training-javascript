@@ -9,14 +9,24 @@
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <div class="selectButton">
-        <button id="rock"><img id="rock" src="./images/rock-image.jpeg" alt="rock-image" height="100"/></button>
-        <button id="paper"><img id="paper" src="./images/paper-image.jpeg" alt="paper-image" height="100"/></button>
-        <button id="scissors"><img id="scissors" src="./images/scissors-image.jpeg" alt="scissors-image" height="100"/></button>
+    <div class="body">
+        <h4 style="color: black;"><span class="heading">You </span><div id="humanScore">0</div></h4>
+        <div class="humanSelection">
+            <button class="rock"><img id="rock" src="./images/rock-image.jpeg" alt="rock-image" height="100"/></button>
+            <button class="paper"><img id="paper" src="./images/paper-image.jpeg" alt="paper-image" height="100"/></button>
+            <button class="scissors"><img id="scissors" src="./images/scissors-image.jpeg" alt="scissors-image" height="100"/></button>
+        </div>
+        <h4 style="color: black;"><span class="heading">Computer </span><div id="computerScore">0</div></h4>
+        <div class="computerSelection">
+            <button class="c-rock"><img id="c-rock" src="./images/rock-image.jpeg" alt="rock-image" height="100"/></button>
+            <button class="c-paper"><img id="c-paper" src="./images/paper-image.jpeg" alt="paper-image" height="100"/></button>
+            <button class="c-scissors"><img id="c-scissors" src="./images/scissors-image.jpeg" alt="scissors-image" height="100"/></button>
+        </div>
     </div>
+    <br></br>
     <div id="container"></div>
     <div class="restartDiv">
-    <button id="restart"><img src="./images/restart-image.png" alt="restart-image" height="45"/></button>
+    <button id="restart"><img id="restart" src="./images/restart-image.png" alt="restart-image" height="45"/></button>
     </div>
 </body>
 </html>

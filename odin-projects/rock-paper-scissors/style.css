@@ -13,10 +13,29 @@ h1 {
     padding: 50px;
 }
 
-.selectButton {
+.heading {
+    background-color: rgb(240, 240, 240);
+    padding: 5px;
+    border: solid rgb(71, 65, 68);
+}
+
+#humanScore, #computerScore {
+    font-size: xx-large;
+    text-align: center;
+    color: antiquewhite;
+    margin: 10px;
+    padding: 5px;
+} 
+
+.body {
     display: flex;
-    margin: auto;
+    flex-direction: row;
     justify-content: center;
+}
+
+.humanSelection, .computerSelection {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 50px;
 }
@@ -40,11 +59,16 @@ button {
     margin: 20px;
 }
 
-button:hover {
+.rock:hover, .paper:hover, .scissors:hover, #restart:hover {
     background-color: rgb(170, 170, 170);
     cursor: pointer;
 }
 
-button:focus {
-    background-color: rgba(222, 116, 246, 0.62);
+.rock:focus, .paper:focus, .scissors:focus {
+    border: 5px solid #b1da0b;
+    box-shadow: 0 0 10px #b1da0b;
 }
+
+/* #c-rock:focus, #c-paper:focus, #c-scissors:focus {
+    background-color: rgba(222, 116, 246, 0.62);
+} */
