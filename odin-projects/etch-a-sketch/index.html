@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="logic.js" defer></script>
+    <link rel="icon" href="./images/brush-icon.png" type="image/icon"/>
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <h1>Etch-A-Sketch</h1>
+    <div class="dimensionClass">
+        <h4>Dimension <input id="dimension" type="number" min="1" max="100"/><button onclick="generateGrid()" id="generateGridButton">Generate!</button></h4>
+    </div>
+    <br></br>
+    <div class="body">
+        <div class="buttons">
+            <input id="colorPickerMode" type="color">
+            <button id="greyMode" onclick="greyGrid()">Grey</button>
+            <button id="rainbowMode" onclick="rainbowGrid()">Rainbow</button>
+            <button id="clearGrid" onclick="clearGrid()">Clear</button>
+        </div>
+        <div id="gridCenter">
+            <div id="gridContainer">
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    Odin Project - 2023
+</footer>
+</html>
