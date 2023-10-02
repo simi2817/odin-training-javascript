@@ -3,9 +3,11 @@ let firstChoice = '';
 let secondChoice = '';
 let result = 0;
 let operatorON = false;
+let clickedOperator = 0;
 
 const assignOperands = (e) => {
     if(!operatorON) {
+        displayPanel.style.fontSize = '100%';
         firstChoice += e.target.id;
         display('firstNum');
         return firstChoice;
@@ -18,11 +20,14 @@ const assignOperands = (e) => {
 }
 
 const assignOperator = (e) => { 
-    return [
+    clickedOperator++;
+    if(clickedOperator === 1) {
+        return [
             operator = e.target.id,
             display('operator'),
             operatorON = true
         ];
+    }
 }
 
 const operate = () => {
@@ -46,11 +51,19 @@ const operate = () => {
             result = (firstOperand * secondOperand).toFixed(2);
             break;
     }
+    
+    checkFontSize(result);
+
     if(secondOperand === 0 && operator === '÷') {
         display('clear');
         clear();
     }
-    else    display('result')
+    else   {
+        display('result');
+        firstChoice = result;
+        secondChoice = '';
+        clickedOperator = 0;
+    }
     return result;
 }
 
@@ -79,7 +92,8 @@ const clear = () => {
         firstChoice = '',
         secondChoice = '',
         operatorON = false,
-        display('clear')
+        display('clear'),
+        clickedOperator = 0
     ];
 }
 
@@ -102,6 +116,11 @@ const backSpaceToRemove = () => {
             return operator;
         }
     }
+}
+
+const checkFontSize = (result) => {
+    if(result.toString().length >= 10)
+        displayPanel.style.fontSize = '70%';
 }
 
 const displayPanel = document.getElementById('displayPanel');

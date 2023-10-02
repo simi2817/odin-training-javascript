@@ -29,15 +29,16 @@ h1 {
     grid-template-columns: repeat(1, 1fr);
     border: 10px solid rgb(200, 134, 134);
     background-color:rgb(200, 134, 134);
-    /* height: 100px; */
+    height: 100px;
     overflow: hidden;
 }
 
 .displayPanel {
     border: 3px solid rgb(200, 134, 134);
-    margin: 6px;
-    padding: 40px;
-    /* height: 100px; */
+    margin: 10px;
+    font-size: 100%;
+    padding: 30px;
+    height: 100px;
     background-color:white;
 }
 
